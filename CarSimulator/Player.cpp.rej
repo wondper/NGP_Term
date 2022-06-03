@@ -1,0 +1,14 @@
+diff a/CarSimulator/Player.cpp b/CarSimulator/Player.cpp	(rejected hunks)
+@@ -678,8 +678,11 @@
+ 	return (len - left);
+ }
+ 
+-DWORD WINAPI RecvData(LPVOID arg)
++DWORD WINAPI TransportData(LPVOID arg)
+ {
++	CRITICAL_SECTION cs;
++	InitializeCriticalSection(&cs);
++
+ 	CVehiclePlayer* pPlayer = (CVehiclePlayer*)arg;
+ 	PlayerData pRecvData;
+ 	int msgType;

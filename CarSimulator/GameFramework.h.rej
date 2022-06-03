@@ -1,0 +1,9 @@
+diff a/CarSimulator/GameFramework.h b/CarSimulator/GameFramework.h	(rejected hunks)
+@@ -93,6 +93,7 @@
+ 	~CGameFramework();
+ 
+ 	bool OnCreate(HINSTANCE hInstance, HWND hMainWnd);
++	//�����ӿ�ũ�� �ʱ�ȭ�ϴ� �Լ��̴�(�� �����찡 �����Ǹ� ȣ��ȴ�).
+ 
+ 	void OnDestroy();
+ 	void CreateSwapChain();
